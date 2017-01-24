@@ -1,0 +1,9 @@
+$a: 100px;
+$b: $a * 2;
+$c: red;
+$d: 1px solid black;
+$e: 'string';
+$f: (
+  number: 2em,
+  string: 'mapstring'
+);

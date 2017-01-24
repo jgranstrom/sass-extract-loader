@@ -1,0 +1,5 @@
+$a: 100px;
+$b: $a * 2;
+$c: red;
+
+@import './sub/sub1.scss';

@@ -1,0 +1,5 @@
+{
+  "verbose": false,
+  "quiet": true,
+  "ignore": ["src/*"]
+}

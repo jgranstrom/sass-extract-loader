@@ -11,6 +11,18 @@ module.exports = {
     filename: '[name].bundle.js',
     publicPath: '/assets',
   },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      }
+    ]
+  },
   devServer: {
     hot: true,
     contentBase: path.resolve(__dirname, './src'),

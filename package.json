@@ -8,6 +8,10 @@
   },
   "author": "John Granström <granstrom.john@gmail.com>",
   "license": "MIT",
+  "peerDependencies": {
+    "webpack": "^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6",
+    "sass-vars": "^0.1.0"
+  },
   "devDependencies": {
     "bluebird": "^3.4.7",
     "chai": "^3.5.0",

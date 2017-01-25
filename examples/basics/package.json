@@ -15,6 +15,7 @@
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.1",
     "prettyjson": "^1.2.1",
+    "node-sass": "^4.3.0",
     "webpack": "^2.2.0"
   }
 }

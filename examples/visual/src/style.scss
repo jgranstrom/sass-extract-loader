@@ -1,0 +1,37 @@
+$singleWidth: 200px;
+$singleHeight: $singleWidth / 2;
+$singleRadius: $singleWidth / 25;
+$singleOpacity: 0.9;
+$singleGradient: #0091ea #00bfa5 #00bfa5 #42bd41;
+
+$circles: (
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+  ( radius: random(30) + 10px ),
+);
+
+$spinnerRadius: 80px;
+$spinners: (
+  ( radius: 40px ),
+  ( radius: 35px ),
+  ( radius: 30px ),
+  ( radius: 25px ),
+);

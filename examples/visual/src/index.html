@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>sass-vars-loader visual example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0; background-color: #17181b;">
+    <svg id="vis" style="width: 100vw; height: 100vh;">
+      <defs>
+        <linearGradient id="singleGradient"></linearGradient>
+        <linearGradient id="circlesGradient"></linearGradient>
+      </defs>
+      <g class="spinner"></g>
+    </svg>
+    <script src="/assets/app.bundle.js"></script>
+  </body>
+</html>

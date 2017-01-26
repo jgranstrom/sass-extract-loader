@@ -6,6 +6,8 @@ Require sass files as modules containing the variables defined in those files. S
 
 This does **not** replace the [sass-loader](https://github.com/jtangelder/sass-loader) for requiring sass in order to generate css, but serves as an additional tool in order to use variables defined in sass in your javascript modules.
 
+![demo](https://www.dropbox.com/s/we3euzpofmibk74/sass-vars-demo.gif?dl=1)
+
 ## Install
 
 You need to install the sass compiler, sass-vars and the loader since they are all [peer dependencies](https://nodejs.org/en/blog/npm/peer-dependencies/).

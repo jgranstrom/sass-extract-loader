@@ -6,7 +6,7 @@ Require sass files as modules containing the variables defined in those files. S
 
 This does **not** replace the [sass-loader](https://github.com/jtangelder/sass-loader) for requiring sass in order to generate css, but serves as an additional tool in order to use variables defined in sass in your javascript modules.
 
-![demo](https://www.dropbox.com/s/we3euzpofmibk74/sass-extract-demo.gif?dl=1)
+![demo](https://www.dropbox.com/s/ket3nlb6jrjyn59/sass-extract-demo.gif?dl=1)
 
 ## Install
 

@@ -1,10 +1,10 @@
-const sassVars = require('sass-vars');
+const sassExtract = require('sass-extract');
 
-module.exports = exports = function sassVarsLoader(content) {
+module.exports = exports = function sassExtractLoader(content) {
   const callback = this.async();
   this.cacheable();
 
-  return sassVars.render({ file: this.resourcePath })
+  return sassExtract.render({ file: this.resourcePath })
   .then(rendered => {
     this.value = [rendered.vars];
     const result = `module.exports = ${JSON.stringify(rendered.vars)};`;

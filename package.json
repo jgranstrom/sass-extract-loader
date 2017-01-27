@@ -1,5 +1,5 @@
 {
-  "name": "sass-vars-loader",
+  "name": "sass-extract-loader",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "peerDependencies": {
     "webpack": "^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6",
-    "sass-vars": "^0.1.0"
+    "sass-extract": "^0.1.0"
   },
   "devDependencies": {
     "bluebird": "^3.4.7",

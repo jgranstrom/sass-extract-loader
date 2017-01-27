@@ -1,4 +1,4 @@
-# sass-vars-loader basic example
+# sass-extract-loader basic example
 
 This examples shows a simple webpack configuration loading variables from a sass files and printing them to the console.
 
@@ -23,5 +23,5 @@ const styleVariables = require('../../../index.js!./style.scss');
 In a real project this would be changed to
 
 ```
-const styleVariables = require('sass-vars-loader!./style.scss');
+const styleVariables = require('sass-extract-loader!./style.scss');
 ```

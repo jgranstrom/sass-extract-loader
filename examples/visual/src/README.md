@@ -1,4 +1,4 @@
-# sass-vars-loader basic example
+# sass-extract-loader basic example
 
 This is a slightly more advanced example with a frontend application served by the webpack dev server with support for hot module replacement. D3 is used to make visualisation based on variables in sass files.
 

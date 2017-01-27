@@ -1,11 +1,15 @@
-const { expect } = require('chai');
+const chai = require('chai');
+const expect = chai.expect;
 const runTest = require('./run-test')
 const path = require('path');
 
 describe('sass-vars-loader', () => {
   it('should succesfully compile basic variables', () => {
     return runTest('./scss/basic.scss')
-    .then(({ compiled, stats }) => {
+    .then((results) => {
+      const compiled = results.compiled;
+      const stats = results.stats;
+
       expect(compiled).to.be.a('object');
       expect(compiled).to.have.property('global');
       expect(compiled.global).to.have.keys(['$a', '$b', '$c', '$d', '$e', '$f']);
@@ -24,7 +28,10 @@ describe('sass-vars-loader', () => {
 
   it('should succesfully compile nested variables', () => {
     return runTest('./scss/nested.scss')
-    .then(({ compiled, stats }) => {
+    .then((results) => {
+      const compiled = results.compiled;
+      const stats = results.stats;
+      
       expect(compiled).to.be.a('object');
       expect(compiled).to.have.property('global');
       expect(compiled.global).to.have.keys(['$a', '$b', '$c', '$d', '$e', '$f']);

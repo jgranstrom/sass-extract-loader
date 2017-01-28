@@ -1,12 +1,22 @@
+<a name="0.3.4"></a>
+## 0.3.4 (2017-01-28)
+
+* chore: bump sass-extract version ([69d0c9c](https://github.com/jgranstrom/sass-extract-loader/commit/69d0c9c))
+* docs: added package description and keywords ([f69b9a0](https://github.com/jgranstrom/sass-extract-loader/commit/f69b9a0))
+* ci: ensure peer deps are installed for travis ([6574ffa](https://github.com/jgranstrom/sass-extract-loader/commit/6574ffa))
+
+
+
 <a name="0.3.3"></a>
 ## 0.3.3 (2017-01-28)
 
+* chore: add license ([4e1a246](https://github.com/jgranstrom/sass-extract-loader/commit/4e1a246))
+* chore(package): set up commitizen and update versions ([09f471f](https://github.com/jgranstrom/sass-extract-loader/commit/09f471f))
+* chore(release): 0.3.3 ([6fc49a1](https://github.com/jgranstrom/sass-extract-loader/commit/6fc49a1))
 * docs: add documentation for contributing ([732e152](https://github.com/jgranstrom/sass-extract-loader/commit/732e152))
 * docs(readme): add badges and fix demo url ([2a32555](https://github.com/jgranstrom/sass-extract-loader/commit/2a32555))
 * build: do not include build config in package ([aeb7c5c](https://github.com/jgranstrom/sass-extract-loader/commit/aeb7c5c))
 * build(examples): update dependency versions ([2122d34](https://github.com/jgranstrom/sass-extract-loader/commit/2122d34))
-* chore: add license ([4e1a246](https://github.com/jgranstrom/sass-extract-loader/commit/4e1a246))
-* chore(package): set up commitizen and update versions ([09f471f](https://github.com/jgranstrom/sass-extract-loader/commit/09f471f))
 * ci: rename ci config ([96c7eee](https://github.com/jgranstrom/sass-extract-loader/commit/96c7eee))
 
 

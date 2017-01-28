@@ -1,12 +1,18 @@
 # sass-extract-loader
 
+[![Build Status](https://travis-ci.org/jgranstrom/sass-extract.svg?branch=master&style=flat)](https://travis-ci.org/jgranstorm/sass-extract-loader)
+[![npm version](https://badge.fury.io/js/sass-extract-loader.svg)](http://badge.fury.io/js/sass-extract-loader)
+[![dependencies Status](https://david-dm.org/jgranstrom/sass-extract-loader/status.svg)](https://david-dm.org/jgranstrom/sass-extract-loader)
+[![devDependencies Status](https://david-dm.org/jgranstrom/sass-extract-loader/dev-status.svg)](https://david-dm.org/jgranstrom/sass-extract-loader?type=dev)
+[![peerDependencies Status](https://david-dm.org/jgranstrom/sass-extract-loader/peer-status.svg)](https://david-dm.org/jgranstrom/sass-extract-loader?type=peer)
+
 Webpack loader for [sass-extract](https://github.com/jgranstrom/sass-extract).
 
 Require sass files as modules containing the variables defined in those files. Supports `@include` directives for extracting variables across multiple files.
 
 This does **not** replace the [sass-loader](https://github.com/jtangelder/sass-loader) for requiring sass in order to generate css, but serves as an additional tool in order to use variables defined in sass in your javascript modules.
 
-![demo](https://www.dropbox.com/s/ket3nlb6jrjyn59/sass-extract-demo.gif?dl=1)
+[![demo.gif](https://s27.postimg.org/w40sdzqjn/demo.gif)](https://postimg.org/image/oba4m0kkf/)
 
 ## Install
 

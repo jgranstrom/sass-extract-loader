@@ -72,3 +72,33 @@ The resulting module will be a plain JSON object containing the extracted variab
 ## Examples
 
 Head over to the [examples](examples) section to see available examples. Simply clone this repository and follow the simple instructions within each example directory to try them out.
+
+## Requirements
+- `node-sass >= 3.8.0`
+- `node >= 4`
+
+## Contributing
+
+##### Running tests
+
+```bash
+npm test
+```
+
+##### Commits
+
+In order to have readable commit messages and the ability to generate a changelog the commit messages should follow a certain structure.
+
+To make it easier install `npm install -g commitizen` and commit using `git-cz`.
+
+Generate changelog using `npm install -g conventional-changelog` and `npm run changelog`.
+
+##### Releasing new versions
+
+1. Make changes
+2. Commit those changes
+4. Set new version in package.json
+5. `npm run changelog`
+6. Commit package.json and CHANGELOG.md files
+7. Tag
+8. Push

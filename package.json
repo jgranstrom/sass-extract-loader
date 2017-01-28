@@ -8,6 +8,19 @@
     "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
   },
   "author": "John Granström <granstrom.john@gmail.com>",
+  "description": "Webpack loader for sass-extract. Extract structured variables when importing sass files.",
+  "keywords": [
+    "webpack",
+    "loader",
+    "sass-extract",
+    "sass",
+    "scss",
+    "variables",
+    "convert",
+    "extract",
+    "import",
+    "json"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=4"

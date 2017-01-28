@@ -4,18 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
   },
   "author": "John Granström <granstrom.john@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=4"
+  },
   "peerDependencies": {
     "webpack": "^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6",
-    "sass-extract": "^0.1.0"
+    "sass-extract": "^0.3.3"
   },
   "devDependencies": {
     "bluebird": "^3.4.7",
     "chai": "^3.5.0",
+    "cz-conventional-changelog": "^1.2.0",
     "mocha": "^3.2.0",
     "webpack": "^2.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

@@ -1,0 +1,14 @@
+language: node_js
+
+before_script:
+  - 'if [ "$WEBPACK_VERSION" ]; then npm install webpack@$WEBPACK_VERSION; fi'
+  - npm install sass-extract
+
+node_js:
+  - "6"
+  - "5"
+  - "4"
+
+env:
+  - WEBPACK_VERSION=^1.12.6"
+  - WEBPACK_VERSION=^2

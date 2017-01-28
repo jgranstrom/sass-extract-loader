@@ -2,7 +2,7 @@ language: node_js
 
 before_script:
   - 'if [ "$WEBPACK_VERSION" ]; then npm install webpack@$WEBPACK_VERSION; fi'
-  - npm install sass-extract
+  - npm install node-sass sass-extract
 
 node_js:
   - "6"

@@ -7,6 +7,7 @@
     "test": "mocha test",
     "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
   },
+  "repository": "jgranstrom/sass-extract-loader",
   "author": "John Granström <granstrom.john@gmail.com>",
   "description": "Webpack loader for sass-extract. Extract structured variables when importing sass files.",
   "keywords": [

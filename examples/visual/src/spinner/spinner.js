@@ -1,5 +1,4 @@
-// NOTE: replace '.../../../../index.js' with 'sass-vars-loader' in your projects
-const styleVariables = require('../../../../index.js!./spinner.scss');
+const styleVariables = require('sass-extract-loader!./spinner.scss');
 const d3 = require('d3');
 
 const vis = d3.select('#vis');

@@ -17,6 +17,7 @@
     "prettyjson": "^1.2.1",
     "node-sass": "^4.3.0",
     "sass-extract": "^0.3.4",
+    "sass-extract-loader": "^0.3.4",
     "webpack": "^2.2.0"
   }
 }

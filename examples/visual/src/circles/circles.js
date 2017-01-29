@@ -1,5 +1,5 @@
 // NOTE: replace '.../../../../index.js' with 'sass-vars-loader' in your projects
-const style = require('../../../../index.js!./circles.scss');
+const style = require('sass-extract-loader!./circles.scss');
 const d3 = require('d3');
 
 const vis = d3.select('#vis');

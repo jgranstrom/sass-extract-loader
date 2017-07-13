@@ -14,7 +14,7 @@
     "babel-preset-es2015": "^6.22.0",
     "d3": "^4.4.4",
     "node-sass": "^4.3.0",
-    "sass-extract": "^0.3.4",
+    "sass-extract": "^0.4.0",
     "sass-extract-loader": "^0.3.4",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"

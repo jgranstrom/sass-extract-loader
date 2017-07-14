@@ -1,7 +1,21 @@
+<a name="0.4.0"></a>
+# 0.4.0 (2017-07-14)
+
+* docs: add repo to package.json ([0407bc5](https://github.com/jgranstrom/sass-extract-loader/commit/0407bc5))
+* docs(examples): add example for passing options to loader ([8e258fd](https://github.com/jgranstrom/sass-extract-loader/commit/8e258fd))
+* docs(examples): bump example dependency versions ([f8629e4](https://github.com/jgranstrom/sass-extract-loader/commit/f8629e4))
+* docs(examples): simplify example dependencies ([98ff4bd](https://github.com/jgranstrom/sass-extract-loader/commit/98ff4bd))
+* docs(examples): update sass-extract version for examples ([e63a4c0](https://github.com/jgranstrom/sass-extract-loader/commit/e63a4c0))
+* feat: allow passing all node-sass options through the loader ([8c7942b](https://github.com/jgranstrom/sass-extract-loader/commit/8c7942b))
+* test: include webpack@3 test ([9873a70](https://github.com/jgranstrom/sass-extract-loader/commit/9873a70))
+
+
+
 <a name="0.3.4"></a>
 ## 0.3.4 (2017-01-28)
 
 * chore: bump sass-extract version ([69d0c9c](https://github.com/jgranstrom/sass-extract-loader/commit/69d0c9c))
+* chore(release): 0.3.4 ([d8e0894](https://github.com/jgranstrom/sass-extract-loader/commit/d8e0894))
 * docs: added package description and keywords ([f69b9a0](https://github.com/jgranstrom/sass-extract-loader/commit/f69b9a0))
 * ci: ensure peer deps are installed for travis ([6574ffa](https://github.com/jgranstrom/sass-extract-loader/commit/6574ffa))
 

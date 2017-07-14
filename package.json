@@ -1,6 +1,6 @@
 {
   "name": "sass-extract-loader",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Webpack loader for sass-extract. Extract structured variables when importing sass files.",
   "main": "index.js",
   "scripts": {

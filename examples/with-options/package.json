@@ -1,0 +1,23 @@
+{
+  "name": "sass-extract-loader-example-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack 1>/dev/null && node dist/app.bundle",
+    "watch:webpack": "webpack --watch 1>/dev/null",
+    "watch:dist": "nodemon ./dist/app.bundle",
+    "watch": "run-p watch:*"
+  },
+  "author": "John Granström <granstrom.john@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.1",
+    "prettyjson": "^1.2.1",
+    "node-sass": "^4.3.0",
+    "sass-extract": "^0.5.0",
+    "sass-extract-loader": "^0.4.0",
+    "webpack": "^2.2.0"
+  }
+}

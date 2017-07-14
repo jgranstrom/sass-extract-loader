@@ -66,4 +66,21 @@ describe('sass-vars-loader', () => {
       expect(err.stats.compilation.fileDependencies).to.have.members([sourceRoot, sourceSub]);
     });
   });
+
+  it('should succesfully include files from includePaths', () => {
+    return runTest('./scss/include.scss', '?{"includePaths": ["./test/scss/include"]}')
+    .then(results => {
+      const compiled = results.compiled;
+      const stats = results.stats;
+
+      expect(compiled).to.be.a('object');
+      expect(compiled).to.have.property('global');
+      expect(compiled.global).to.have.keys(['$included', '$origin']);
+
+      const sourceRoot = path.resolve(__dirname, './scss/include.scss');
+      const sourceIncluded = path.resolve(__dirname, './scss/include/included.scss');
+
+      expect(stats.compilation.fileDependencies).to.have.members([sourceRoot, sourceIncluded]);
+    });
+  });
 });

@@ -1,6 +1,6 @@
 # sass-extract-loader
 
-[![Build Status](https://travis-ci.org/jgranstrom/sass-extract.svg?branch=master&style=flat)](https://travis-ci.org/jgranstorm/sass-extract-loader)
+[![Build Status](https://travis-ci.org/jgranstrom/sass-extract.svg?branch=master&style=flat)](https://travis-ci.org/jgranstrom/sass-extract-loader)
 [![npm version](https://badge.fury.io/js/sass-extract-loader.svg)](http://badge.fury.io/js/sass-extract-loader)
 [![dependencies Status](https://david-dm.org/jgranstrom/sass-extract-loader/status.svg)](https://david-dm.org/jgranstrom/sass-extract-loader)
 [![devDependencies Status](https://david-dm.org/jgranstrom/sass-extract-loader/dev-status.svg)](https://david-dm.org/jgranstrom/sass-extract-loader?type=dev)
@@ -74,6 +74,12 @@ Note that this alternative might not be a good choice as you likely want the def
 ```
 
 The resulting module will be a plain JSON object containing the extracted variables and their values. For detailed documentation on the structure and semantics of the response head over to the documentation for [sass-extract](https://github.com/jgranstrom/sass-extract).
+
+## Options
+
+All options available for `node-sass` can be passed to the loader with any of the available methods for webpack.
+
+An example is including a path for resolving imports such as `const styleVariables = require('sass-extract-loader?{"includePaths": ["./foobar"]}!./style.scss');`.
 
 ## Examples
 

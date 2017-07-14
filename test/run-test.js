@@ -5,7 +5,7 @@ const path = require('path');
 const pathToLoader = path.resolve(__dirname, "../index.js");
 const pathToTestBundle = path.resolve(__dirname, "./output/test.bundle.js")
 
-module.exports = exports = (filename) => {
+module.exports = exports = (filename, options) => {
   return webpack({
     entry: filename,
     context: __dirname,
@@ -13,7 +13,7 @@ module.exports = exports = (filename) => {
       loaders: [
         {
           test: /.scss$/,
-          loader: pathToLoader,
+          loader: pathToLoader + (options || ''),
         }
       ],
     },

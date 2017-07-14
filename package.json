@@ -1,7 +1,7 @@
 {
   "name": "sass-extract-loader",
   "version": "0.3.4",
-  "description": "",
+  "description": "Webpack loader for sass-extract. Extract structured variables when importing sass files.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
@@ -9,7 +9,6 @@
   },
   "repository": "jgranstrom/sass-extract-loader",
   "author": "John Granström <granstrom.john@gmail.com>",
-  "description": "Webpack loader for sass-extract. Extract structured variables when importing sass files.",
   "keywords": [
     "webpack",
     "loader",
@@ -27,8 +26,8 @@
     "node": ">=4"
   },
   "peerDependencies": {
-    "webpack": "^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6",
-    "sass-extract": "^0.3.4"
+    "webpack": "^3 || ^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6",
+    "sass-extract": "^0.5.0"
   },
   "devDependencies": {
     "bluebird": "^3.4.7",
@@ -41,5 +40,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
   }
 }

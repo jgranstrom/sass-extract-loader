@@ -81,6 +81,10 @@ All options available for `node-sass` can be passed to the loader with any of th
 
 An example is including a path for resolving imports such as `const styleVariables = require('sass-extract-loader?{"includePaths": ["./foobar"]}!./style.scss');`.
 
+## Plugins
+
+Plugins can be used by passing plugin module names in the query options to the loader `const styleVariables = require('sass-extract-loader?{"plugins": ["minimal"]}!./style.scss');`.
+
 ## Examples
 
 Head over to the [examples](examples) section to see available examples. Simply clone this repository and follow the simple instructions within each example directory to try them out.

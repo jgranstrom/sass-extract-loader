@@ -83,4 +83,25 @@ describe('sass-vars-loader', () => {
       expect(stats.compilation.fileDependencies).to.have.members([sourceRoot, sourceIncluded]);
     });
   });
+
+  it('should succesfully use minimal plugin', () => {
+    return runTest('./scss/basic.scss', '?{"plugins": ["minimal"]}')
+    .then(results => {
+      const compiled = results.compiled;
+      const stats = results.stats;
+
+      expect(compiled).to.be.a('object');
+      expect(compiled).to.have.property('global');
+      expect(compiled.global).to.have.keys(['$a', '$b', '$c', '$d', '$e', '$f']);
+      const source = path.resolve(__dirname, './scss/basic.scss');
+
+      expect(compiled.global.$a).to.equal('100px');
+      expect(compiled.global.$b).to.equal('200px');
+      expect(compiled.global.$c).to.equal('red');
+      expect(compiled.global.$d).to.equal('1px solid black');
+      expect(compiled.global.$e).to.equal('string');
+
+      expect(stats.compilation.fileDependencies).to.have.members([source]);
+    });
+  });
 });

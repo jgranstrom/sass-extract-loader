@@ -14,9 +14,10 @@ module.exports = exports = function sassExtractLoader(content) {
   const callback = this.async();
   this.cacheable();
 
-  const query = loaderUtils.getOptions(this);
+  const query = loaderUtils.getOptions(this);;
+  const plugins = (query ? query.plugins : []) || [];
 
-  return sassExtract.render(Object.assign({}, query, { file: this.resourcePath }))
+  return sassExtract.render(Object.assign({}, query, { file: this.resourcePath }), { plugins })
   .then(rendered => {
     this.value = [rendered.vars];
     const result = `module.exports = ${JSON.stringify(rendered.vars)};`;

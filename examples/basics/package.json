@@ -16,8 +16,8 @@
     "npm-run-all": "^4.0.1",
     "prettyjson": "^1.2.1",
     "node-sass": "^4.3.0",
-    "sass-extract": "^1.0.1",
-    "sass-extract-loader": "^1.0.0",
+    "sass-extract": "^2.0.0",
+    "sass-extract-loader": "^1.1.0",
     "webpack": "^2.2.0"
   }
 }

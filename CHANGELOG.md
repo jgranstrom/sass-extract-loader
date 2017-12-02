@@ -1,9 +1,18 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2017-12-02)
+
+* build(dep): bump dev deps ([3b1f079](https://github.com/jgranstrom/sass-extract-loader/commit/3b1f079))
+* build(dep): bump sass-extract peer dep version ([8a3ea5e](https://github.com/jgranstrom/sass-extract-loader/commit/8a3ea5e))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-09-10)
 
-* docs(examples): add plugin example ([de50ef5](https://github.com/jgranstrom/sass-extract-loader/commit/de50ef5))
 * chore: bump sass-extract version ([44b0dcf](https://github.com/jgranstrom/sass-extract-loader/commit/44b0dcf))
 * chore(examples): bump examples versions ([42ecdeb](https://github.com/jgranstrom/sass-extract-loader/commit/42ecdeb))
+* chore(release): 1.0.0 ([776368a](https://github.com/jgranstrom/sass-extract-loader/commit/776368a))
+* docs(examples): add plugin example ([de50ef5](https://github.com/jgranstrom/sass-extract-loader/commit/de50ef5))
 * feat: support sass-extract plugins ([649918f](https://github.com/jgranstrom/sass-extract-loader/commit/649918f))
 
 

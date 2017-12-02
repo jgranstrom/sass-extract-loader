@@ -31,10 +31,10 @@
   },
   "devDependencies": {
     "bluebird": "^3.4.7",
-    "chai": "^3.5.0",
-    "cz-conventional-changelog": "^1.2.0",
-    "mocha": "^3.2.0",
-    "webpack": "^2.2.0"
+    "chai": "^4.1.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "mocha": "^4.0.1",
+    "webpack": "^3.9.1"
   },
   "config": {
     "commitizen": {

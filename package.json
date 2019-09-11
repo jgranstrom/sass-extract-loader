@@ -23,10 +23,10 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=4"
+    "node": ">=6.11.5"
   },
   "peerDependencies": {
-    "webpack": "^3 || ^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6",
+    "webpack": "^4 || ^3 || ^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6",
     "sass-extract": "^1.0.1 || ^2.0.0"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "chai": "^4.1.2",
     "cz-conventional-changelog": "^2.1.0",
     "mocha": "^4.0.1",
-    "webpack": "^3.9.1"
+    "webpack": "^4.29.6"
   },
   "config": {
     "commitizen": {

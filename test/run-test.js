@@ -10,7 +10,7 @@ module.exports = exports = (filename, options) => {
     entry: filename,
     context: __dirname,
     module: {
-      loaders: [
+      rules: [
         {
           test: /.scss$/,
           loader: pathToLoader + (options || ''),

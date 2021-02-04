@@ -22,7 +22,7 @@ describe('sass-vars-loader', () => {
       expect(compiled.global.$e.sources).to.have.members([source]);
       expect(compiled.global.$f.sources).to.have.members([source]);
 
-      expect(stats.compilation.fileDependencies).to.have.members([source]);
+      expect(Array.from(stats.compilation.fileDependencies)).to.include.members([source]);
     });
   });
 
@@ -46,7 +46,7 @@ describe('sass-vars-loader', () => {
       expect(compiled.global.$e.sources).to.have.members([sourceSub2]);
       expect(compiled.global.$f.sources).to.have.members([sourceSub2]);
 
-      expect(stats.compilation.fileDependencies).to.have.members([sourceRoot, sourceSub1, sourceSub2]);
+      expect(Array.from(stats.compilation.fileDependencies)).to.include.members([sourceRoot, sourceSub1, sourceSub2]);
     });
   });
 
@@ -54,7 +54,7 @@ describe('sass-vars-loader', () => {
     return runTest('./scss/error.scss')
     .catch(err => {
       const source = path.resolve(__dirname, './scss/error.scss');
-      expect(err.stats.compilation.fileDependencies).to.have.members([source]);
+      expect(Array.from(err.stats.compilation.fileDependencies)).to.include.members([source]);
     });
   });
 
@@ -63,12 +63,12 @@ describe('sass-vars-loader', () => {
     .catch(err => {
       const sourceRoot = path.resolve(__dirname, './scss/nested-error.scss');
       const sourceSub = path.resolve(__dirname, './scss/sub/error.scss');
-      expect(err.stats.compilation.fileDependencies).to.have.members([sourceRoot, sourceSub]);
+      expect(Array.from(err.stats.compilation.fileDependencies)).to.include.members([sourceRoot, sourceSub]);
     });
   });
 
   it('should succesfully include files from includePaths', () => {
-    return runTest('./scss/include.scss', '?{"includePaths": ["./test/scss/include"]}')
+    return runTest('./scss/include.scss', {"includePaths": ["./test/scss/include"]})
     .then(results => {
       const compiled = results.compiled;
       const stats = results.stats;
@@ -80,12 +80,12 @@ describe('sass-vars-loader', () => {
       const sourceRoot = path.resolve(__dirname, './scss/include.scss');
       const sourceIncluded = path.resolve(__dirname, './scss/include/included.scss');
 
-      expect(stats.compilation.fileDependencies).to.have.members([sourceRoot, sourceIncluded]);
+      expect(Array.from(stats.compilation.fileDependencies)).to.include.members([sourceRoot, sourceIncluded]);
     });
   });
 
   it('should succesfully use minimal plugin', () => {
-    return runTest('./scss/basic.scss', '?{"plugins": ["minimal"]}')
+    return runTest('./scss/basic.scss', {"plugins": ["minimal"]})
     .then(results => {
       const compiled = results.compiled;
       const stats = results.stats;
@@ -101,7 +101,7 @@ describe('sass-vars-loader', () => {
       expect(compiled.global.$d).to.equal('1px solid black');
       expect(compiled.global.$e).to.equal('string');
 
-      expect(stats.compilation.fileDependencies).to.have.members([source]);
+      expect(Array.from(stats.compilation.fileDependencies)).to.include.members([source]);
     });
   });
 });

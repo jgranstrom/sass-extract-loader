@@ -5,10 +5,8 @@ before_script:
   - npm install node-sass sass-extract
 
 node_js:
-  - "6"
-  - "5"
+  - "10"
 
 env:
-  - WEBPACK_VERSION=^1.12.6"
-  - WEBPACK_VERSION=^2
-  - WEBPACK_VERSION=^3
+  - WEBPACK_VERSION=^4
+  - WEBPACK_VERSION=^5

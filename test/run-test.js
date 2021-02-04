@@ -3,17 +3,19 @@ const webpack = Promise.promisify(require('webpack'));
 const path = require('path');
 
 const pathToLoader = path.resolve(__dirname, "../index.js");
-const pathToTestBundle = path.resolve(__dirname, "./output/test.bundle.js")
+const pathToTestBundle = path.resolve(__dirname, "./output/test.bundle.js");
 
 module.exports = exports = (filename, options) => {
   return webpack({
     entry: filename,
     context: __dirname,
+    mode: 'development',
     module: {
-      loaders: [
+      rules: [
         {
           test: /.scss$/,
-          loader: pathToLoader + (options || ''),
+          loader: pathToLoader,
+          options
         }
       ],
     },

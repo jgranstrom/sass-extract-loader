@@ -16,12 +16,17 @@ module.exports = exports = function sassExtractLoader(content) {
 
   const query = loaderUtils.getOptions(this);;
   const plugins = (query ? query.plugins : []) || [];
+  const extractOptions = { plugins };
 
-  return sassExtract.render(Object.assign({}, query, { file: this.resourcePath }), { plugins })
+  if (query.implementation) {
+    extractOptions.implementation = query.implementation;
+  }
+
+  return sassExtract.render(Object.assign({}, query, { file: this.resourcePath }), extractOptions)
   .then(rendered => {
     this.value = [rendered.vars];
     const result = `module.exports = ${JSON.stringify(rendered.vars)};`;
-    
+
     rendered.stats.includedFiles.forEach(includedFile => {
       this.addDependency(normalizeDependency(includedFile));
     });
